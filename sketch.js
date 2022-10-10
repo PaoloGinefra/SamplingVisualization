@@ -23,7 +23,7 @@ function draw() {
 	frameRate(FrameRate);
 
 	noStroke();
-	polygon((width - RADIUS)/2, (height - RADIUS)/2, RADIUS, 5, phi);
+	polygon(width/2, height/2, RADIUS, 5, phi);
 
 	phi += freq * 2 * PI / FrameRate
 }
@@ -37,4 +37,8 @@ function polygon(x, y, radius, npoints, phi = 0) {
 	  vertex(sx, sy);
 	}
 	endShape(CLOSE);
+}
+
+  function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
   }

@@ -15,7 +15,7 @@ h2{
 .Container{
     width: 80%;
     position: absolute;
-    bottom: 0%;
+    bottom: 0px;
     left: 10%;
 
     display: flex;
@@ -42,4 +42,8 @@ p{
     color: white;
     font-weight: bold;
     font-size: 100%;
+}
+
+#canvas{
+    display: block;
 }
